@@ -62,12 +62,19 @@ public class Main {
 
     public static void removing() {
         var chars = new Character[] {'a', 'b', 'c'};
+
         List<Character> list = new UniArrayList<>(chars);
+
         list.remove(Character.valueOf('b'));
+
         assertEquals("[a, c]", list.toString());
+
         list.add('b');
+
         assertEquals("[a, c, b]", list.toString());
+
         list.remove(Character.valueOf('a'));
+
         assertEquals("[c, b]", list.toString());
     }
 
@@ -125,7 +132,7 @@ public class Main {
         encapsulation();
         addAt();
         adding();
-//        removing();
+        removing();
 //        removingAt();
 //        iterating();
 //        sorting();

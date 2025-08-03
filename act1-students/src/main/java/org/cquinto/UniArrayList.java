@@ -50,7 +50,9 @@ public class UniArrayList<T> implements List, Sortable, Unique {
 
     @Override
     public boolean remove(Object o) {
-        return false;
+        list.remove(o);
+
+        return true;
     }
 
     @Override
@@ -135,7 +137,7 @@ public class UniArrayList<T> implements List, Sortable, Unique {
 
     @Override
     public String toString() {
-        return this.list.toString();
+        return list.toString();
     }
 
     @Override
