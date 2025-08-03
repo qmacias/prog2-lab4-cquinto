@@ -87,7 +87,7 @@ public class UniArrayList<T> implements List, Sortable, Unique {
 
     @Override
     public Object remove(int index) {
-        return null;
+        return list.remove(index);
     }
 
     @Override

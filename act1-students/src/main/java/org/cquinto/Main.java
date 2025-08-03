@@ -80,11 +80,17 @@ public class Main {
 
     public static void removingAt() {
         var ints = new Integer[] {1, 2, 3};
+
         List<Integer> list = new UniArrayList<>(ints);
+
         Integer removed = list.remove(1);
+
         assertEquals(Integer.valueOf(2), removed);
+
         assertEquals("[1, 3]", list.toString());
+
         list.remove(Integer.valueOf(3));
+
         assertEquals("[1]", list.toString());
     }
 
@@ -133,7 +139,7 @@ public class Main {
         addAt();
         adding();
         removing();
-//        removingAt();
+        removingAt();
 //        iterating();
 //        sorting();
 //        unique();
