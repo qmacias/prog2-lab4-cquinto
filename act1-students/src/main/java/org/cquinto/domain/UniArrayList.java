@@ -18,7 +18,7 @@ public class UniArrayList<T> implements List, Sortable, Unique {
 
     @Override
     public int size() {
-        return 0;
+        return list.size();
     }
 
     @Override
@@ -43,7 +43,9 @@ public class UniArrayList<T> implements List, Sortable, Unique {
 
     @Override
     public boolean add(Object o) {
-        return false;
+        list.add((T) o);
+
+        return true;
     }
 
     @Override
@@ -68,7 +70,7 @@ public class UniArrayList<T> implements List, Sortable, Unique {
 
     @Override
     public Object get(int index) {
-        return null;
+        return list.get(index);
     }
 
     @Override

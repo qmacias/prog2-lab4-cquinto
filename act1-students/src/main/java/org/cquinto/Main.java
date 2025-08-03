@@ -5,7 +5,6 @@ import org.cquinto.domain.Student;
 import org.cquinto.domain.UniArrayList;
 import org.cquinto.domain.Unique;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -52,12 +51,17 @@ public class Main {
 
     public static void adding() {
         List<String> list = new UniArrayList<>();
+
         var size = 1_000_000;
+
         assertEquals(0, list.size());
+
         for (int i = 0; i < size; i++) {
             list.add(Integer.toString(i));
         }
+
         assertEquals(size, list.size());
+
         assertEquals("999999", list.get(size - 1));
     }
 
@@ -125,7 +129,7 @@ public class Main {
     public static void main(String[] args) {
         encapsulation();
         addAt();
-//        adding();
+        adding();
 //        removing();
 //        removingAt();
 //        iterating();
