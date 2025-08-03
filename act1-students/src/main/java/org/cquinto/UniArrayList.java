@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Cristian Ezequiel Quinto
  */
-public class UniArrayList<T> implements List, Sortable, Unique {
+public class UniArrayList<T extends Comparable<T>> implements List, Sortable, Unique {
     private final List<T> list;
 
     public UniArrayList () {
@@ -33,7 +33,7 @@ public class UniArrayList<T> implements List, Sortable, Unique {
 
     @Override
     public Iterator iterator() {
-        return list.listIterator();
+        return list.iterator();
     }
 
     @Override
@@ -142,12 +142,12 @@ public class UniArrayList<T> implements List, Sortable, Unique {
 
     @Override
     public void sort() {
-
+        Collections.sort(list);
     }
 
     @Override
     public void sortBy(Comparator comparator) {
-
+        list.sort(comparator);
     }
 
     @Override

@@ -112,16 +112,18 @@ public class Main {
                 new Student("S1", 51),
                 new Student("S3", 50)
         };
+
         Sortable<Student> students = new UniArrayList<>(arrayStudents);
 
         assertEquals("[{S2,100}, {S1,51}, {S3,50}]", students.toString());
 
         students.sort();
+
         assertEquals("[{S1,51}, {S2,100}, {S3,50}]", students.toString());
 
         students.sortBy(Student.byGrade());
-        assertEquals("[{S3,50}, {S1,51}, {S2,100}]", students.toString());
 
+        assertEquals("[{S3,50}, {S1,51}, {S2,100}]", students.toString());
     }
 
     public static void unique() {
@@ -144,7 +146,7 @@ public class Main {
         removing();
         removingAt();
         iterating();
-//        sorting();
+        sorting();
 //        unique();
     }
 
