@@ -38,10 +38,15 @@ public class Main {
 
     public static void addAt() {
         var ints = new Integer[] {1, 2, 3};
+
         List<Integer> list = new UniArrayList<>(ints);
+
         list.add(0, 4);
+
         assertEquals("[4, 1, 2, 3]", list.toString());
+
         list.add(4, 5);
+
         assertEquals("[4, 1, 2, 3, 5]", list.toString());
     }
 
@@ -119,7 +124,7 @@ public class Main {
 
     public static void main(String[] args) {
         encapsulation();
-//        addAt();
+        addAt();
 //        adding();
 //        removing();
 //        removingAt();

@@ -9,11 +9,11 @@ public class UniArrayList<T> implements List, Sortable, Unique {
     private final List<T> list;
 
     public UniArrayList () {
-        this.list = new ArrayList<>();
+        list = new ArrayList<>();
     }
 
     public UniArrayList(T[] ints) {
-       list = new ArrayList<>(Arrays.asList(ints));
+        list = new ArrayList<>(Arrays.asList(ints));
     }
 
     @Override
@@ -78,6 +78,7 @@ public class UniArrayList<T> implements List, Sortable, Unique {
 
     @Override
     public void add(int index, Object element) {
+        list.add(index, (T) element);
     }
 
     @Override
