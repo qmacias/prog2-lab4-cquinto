@@ -1,6 +1,6 @@
-# Prog_2_Lab_3_CQuinto
+# Prog_2_Lab_4_CQuinto
 
-Week 3 - Lab 3
+Week 3 - Lab 4
 
 Group A - Section C
 
@@ -16,14 +16,8 @@ We're using:
 
 ---
 
-## Enums Example
+## Data structures
 
-**Activity 1 Card Game**
+**Activity 1 Students**
 
-[Go to Activity 1 docs](./act1-card-game/README.md)
-
-## Abstract Classes
-
-**Activity 2 Mobile Devices**
-
-[Go to Activity 2 docs](./act2-mobile-devices/README.md)
+[Go to Activity 1 docs](./act1-students/README.md)
