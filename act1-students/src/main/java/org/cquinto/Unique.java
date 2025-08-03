@@ -1,4 +1,4 @@
-package org.cquinto.domain;
+package org.cquinto;
 
 /**
  * Cristian Ezequiel Quinto
