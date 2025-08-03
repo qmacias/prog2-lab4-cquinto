@@ -33,7 +33,7 @@ public class UniArrayList<T> implements List, Sortable, Unique {
 
     @Override
     public Iterator iterator() {
-        return null;
+        return list.listIterator();
     }
 
     @Override

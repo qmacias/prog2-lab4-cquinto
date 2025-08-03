@@ -96,8 +96,11 @@ public class Main {
 
     public static void iterating() {
         var ints = new Integer[] {1, 2, 3};
+
         List<Integer> list = new UniArrayList<>(ints);
+
         int count = 1;
+
         for (Integer i : list) {
             assertEquals(count++, i);
         }
@@ -140,7 +143,7 @@ public class Main {
         adding();
         removing();
         removingAt();
-//        iterating();
+        iterating();
 //        sorting();
 //        unique();
     }
