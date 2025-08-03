@@ -133,9 +133,11 @@ public class Main {
                 new Student("S2", 51),
                 new Student("S2", 50)
         };
+
         Unique<Student> students = new UniArrayList<>(arrayStudents);
 
         students.unique();
+
         assertEquals("[{S2,51}, {S2,50}]", students.toString());
     }
 
@@ -147,7 +149,7 @@ public class Main {
         removingAt();
         iterating();
         sorting();
-//        unique();
+        unique();
     }
 
 }

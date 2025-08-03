@@ -1,6 +1,7 @@
 package org.cquinto;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 /**
  * Cristian Ezequiel Quinto
@@ -44,6 +45,18 @@ public class Student implements Comparable<Student> {
         String studentName = s.getName();
 
         return this.getName().compareTo(studentName);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Student student))
+            return false;
+        return grade == student.grade && Objects.equals(name, student.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, grade);
     }
 
     @Override

@@ -6,7 +6,7 @@ import java.util.*;
  * Cristian Ezequiel Quinto
  */
 public class UniArrayList<T extends Comparable<T>> implements List, Sortable, Unique {
-    private final List<T> list;
+    private List<T> list;
 
     public UniArrayList () {
         list = new ArrayList<>();
@@ -152,7 +152,15 @@ public class UniArrayList<T extends Comparable<T>> implements List, Sortable, Un
 
     @Override
     public void unique() {
+        List<T> uniqueList = new ArrayList<>();
 
+        for (T student : list) {
+            if (!uniqueList.contains(student)) {
+                uniqueList.add(student);
+            }
+        }
+
+        list = uniqueList;
     }
 
 }
